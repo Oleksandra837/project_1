@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Plant Care</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="registration.html" class="active">Register</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section class="registration-form">
+        <div class="form-container">
+            <h2>Login I <span class="highlight">Register</span></h2>
+            <form action="#" method="post">
+                <label for="username">Enter your email and password to register</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <div class="divider">
+                <span>Or register with</span>
+                </div>
+                <button class="btn social-btn">
+                    <img src="images/google.png" alt="Google Icon" width="20" height="20">
+                    Continue with Google
+                </button>
+                <button class="btn social-btn">
+                    <img src="images/facebook.png" alt="Facebook Icon" width="20" height="20">
+                    Continue with Facebook</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -2,11 +2,10 @@
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
 }
 
 .box {
@@ -19,13 +18,17 @@
     width: 100%;
     height: auto;
 }
-
 /* Navigation Bar */
+.logo {
+    flex-grow: 1;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    width: 100%;
+    padding: 10px 20px;
 }
 
 .nav-menu {
@@ -94,7 +97,7 @@ h1 {
 
 /* Styling for the highlighted text inside the heading */
 h1 span {
-  color: #00a64f; /* Green color for "Planet" */
+  color: #00a64f;
 }
 
 /* Styling for the paragraph */
@@ -122,16 +125,18 @@ p {
 /* Hero Section styling */
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #f9f9f9;
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Styling for text in the hero section */
 .hero-text-box {
     width: 45%;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .hero-text-box h1 {
@@ -181,7 +186,7 @@ body, h1, p, ul, li, a, button {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
 }
 
@@ -285,7 +290,7 @@ color: #666;
     color: #000;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 15px 30 px; 
+    padding: 15px 30px; 
     width: 100%;
     display: flex;
     align-items: center;
@@ -298,4 +303,172 @@ color: #666;
 
 .highlight {
     color: #00a64F;
+}
+
+/*Контейне для бокової панелі та блоку продуктів */
+.container {
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Бокова панель */
+.sidebar {
+    float: left;
+    display: inline-block;
+    width: 350px;
+    vertical-align: top;
+    height: 1170px;
+    background-color: #f9f9f9;
+}
+
+/* Банер */
+.sale-banner {
+    display: block;
+    width: 415px;
+    margin-left: -32px;
+    margin-top: 270px;
+}
+
+.sale-banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Заголовок "Categories" */
+.sidebar h2 {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+/* Список категорій */
+.sidebar ul {
+    list-style: none;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #4CAF50 !important;
+    cursor: pointer;
+}
+
+/* Основний контент */
+.main-content {
+    width: calc(100% - 350px);
+    background-color: #fff;
+    float: right;
+    margin-top: 0;
+    vertical-align: top;
+}
+
+.shop-wrapper {
+    display: flex;
+}
+
+/* Вирівнювання секції з фільтрами та сортуванням */
+.filter-sort-box {
+    margin-bottom: 20px;
+}
+
+
+/* Стилі для продуктів */
+.product-grid {
+    margin-top: 0;
+}
+
+.product-card {
+    display: inline-block;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    width: 30%;
+    margin: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 18px;
+    color: #4CAF50;
+    font-size: bold;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Панель фільтру і сортування */
+.filter-sort-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 0;
+    background-color: #fff
+}
+
+.filter-sort-box a{
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.filter-sort-box a:hover {
+    color: #4CAF50;
+}
+
+
+/* Нумерація сторінок */
+.pagination-box {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.pagination a {
+   color: #4CAF50;
+   padding: 10px 15px;
+   text-decoration: none;
+   border: 1px solid #ccc;
+}
+
+.pagination a:hover{
+  background-color: #ddd;
+}
+
+/* Очищення float */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }

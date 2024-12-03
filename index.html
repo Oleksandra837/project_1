@@ -20,7 +20,24 @@
                 <ul class="nav-menu">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="#">Shop</a></li>
-                    <li><a href="#">Plant Care</a></li>
+                    <li class="menu-item"><span class="manu_items_span">Plant Care</span> 
+                        <ul class="drop-down">
+                            <li>Drainage</li>
+                            <li>Fungicides</li>
+                            <li>Fertilizer</li>
+                            <li class="has-submenu">
+                              Priming
+                              <ul class="sub-menu">
+                                <li>Universal</li>
+                                <li>For Ficus</li>
+                                <li>For Cacti</li>
+                                <li>For Citrus</li>
+                                <li>For those in bloom</li>
+                                <li>For Orchids</li>
+                              </ul>
+                            </li>
+                          </ul>
+                    </li> 
                     <li><a href="#">Blogs</a></li>
                     <li><a href="registration.html"></a></li>
                 </ul>
@@ -63,10 +80,9 @@
                     <li><a href="#">Accessories</a></li>
                 </ul>
                 <div class="sale-banner">
-                    <img src="images/Super Sale Banner.png" alt="Super Sale">
+                    <img src="images/Banner.png" alt="Banner">
                 </div>
             </div>
-            <div class="main-content">
                 <!-- Filter and Sort -->
                 <div class="filter-sort-box">
                     <div class="all-plants">
@@ -89,14 +105,34 @@
                         <p class="price">$119.00</p>
                     </div>
                     <div class="product-card">
-                        <img src="images/image_2.png" alt="Angel Wing Begonia">
-                        <p>Angel Wing Begonia</p>
+                        <img src="images/image_2.png" alt="Angel Wing Begonia" class="product-img">
+                        <div class="product-icons">
+                            <a href="#" class="icon">
+                                <img src="images/cart.png" alt="Add to Cart">
+                            </a>
+                            <a href="#" class="icon">
+                                <img src="images/heart 1.png" alt="Add to Wishlist">
+                            </a>
+                            <a href="#" class="icon">
+                                <img src="images/search.png" alt="Search">
+                            </a>
+                            </div>
+                            <div class="product-info">
+                        <p class="product-name">Angel Wing Begonia</p>
                         <p class="price">$169.00</p>
                     </div>
+                        </div> 
                     <div class="product-card">
-                        <img src="images/image_3.png" alt="African Violet">
-                        <p>African Violet</p>
-                        <p class="price">$199.00</p>
+                        <div class="sale-badge">
+                            <img src="images/13.png" alt="13">
+                        </div>
+                        <img src="images/image_3.png" alt="African Violet" class="product-img">
+                        <div class="product-info">
+                        <p class="product-name">African Violet</p>
+                        <p class="price">
+                            $199.00 <span class="old-price">$229.00</span>
+                        </p>
+                        </div>
                     </div>
                     <div class="product-card">
                         <img src="images/image_4.png" alt="Beach Spider Lily">
@@ -130,8 +166,6 @@
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
-            </div>
         </div>
         <!-- Pagination -->
         <div class="pagination-box">
@@ -152,7 +186,7 @@
         <div class="promo-content">
             <h3>SUMMER CACTUS &  SUCCULENTS</h3>
             <p>We are an online plant shop offering a wide range of cheap and plants.</p>
-            <a href="#" class="promo-btn">Find More</a>
+            <a href="#" class="promo-btn">Find More →</a>
         </div>
     </div>
     <div class="promo-banner">
@@ -160,11 +194,12 @@
         <div class="promo-content">
             <h3>STYLING TRENDS & MUCH MORE</h3>
             <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
-            <a href="#" class="promo-btn">Find More</a>
+            <a href="#" class="promo-btn">Find More →</a>
         </div>
     </div>
 </section>
 <section class="blog-posts">
+    <div class="container">
     <h2>Our Blog Posts</h2>
     <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
     <div class="blog-grid">
@@ -197,6 +232,124 @@
             <p>Read More →</p>
         </div>
     </div>
+    </div>
+    </section>
+<section class="info">
+    <div class="container-info">
+        <div class="info-section">
+    <div class="info-block">
+      <img src="images/garden-care-icon.png" alt="Garden Care Icon">
+      <h4>Garden Care</h4>
+      <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+    </div>
+    <div class="info-block">
+      <img src="images/plant-renovation-icon.png" alt="Plant Renovation Icon">
+      <h4>Plant Renovation</h4>
+      <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+    </div>
+    <div class="info-block">
+      <img src="images/watering-garden-icon.png" alt="Watering Garden Icon">
+      <h4>Watering Garden</h4>
+      <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+    </div>
+    <div class="newsletter-block">
+      <h4>Would you like to join newsletters?</h4>
+      <form>
+        <div class="form_inner">
+        <input type="email" placeholder="Enter your email address..." />
+        <button type="submit">Join</button>
+    </div>
+      </form>
+      <p>
+        We usually post offers and challenges in the newsletter. We're your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours!
+      </p>
+    </div>
+</div>
+</div>
 </section>
+<footer class="footer">
+    <div class="container-info">
+  <div class="footer-middle">
+    <div class="footer-logo">
+        <img src="images/Vector.png" alt="GreenShop Logo">
+    </div>
+    <div class="footer-info">
+        <div class="info-item">
+            <img src="images/Location.png" alt="Location Icon" class="icon">
+            70 West Buckingham Ave., Farmingdale, NY 11735
+        </div>
+        <div class="info-item">
+            <img src="images/contact.png" alt="Email Icon" class="icon">
+            contact@greenshop.com
+        </div>
+        <div class="info-item">
+            <img src="images/phone.png" alt="Phone Icon" class="icon">
+            +88 01911 717 490
+        </div>
+    </div>
+</div>
+</div>
+    <div class="containerz">
+        <div class="footer-section">
+            <h3 class="footer-section-title">My Account</h3>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Our stores</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Specials</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="footer-section-title">Help & Guide</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">How to Buy</a></li>
+                <li><a href="#">Shipping & Delivery</a></li>
+                <li><a href="#">Product Policy</a></li>
+                <li><a href="#">How to Return</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="footer-section-title">Categories</h3>
+            <ul>
+                <li><a href="#">House Plants</a></li>
+                <li><a href="#">Potter Plants</a></li>
+                <li><a href="#">Seeds</a></li>
+                <li><a href="#">Small Plants</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="title-media">Social Media</h3>
+            <div class="social-media">
+                <a href="#" target="_blank">
+                    <img src="images/Facebook_2.png" alt="Facebook Icon">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/Instagram.png" alt="Instagram Icon">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/Twitter.png" alt="Twitter Icon">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/Linkidin.png" alt="LinkedIn Icon">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/Youtube.png" alt="YouTube Icon">
+                </a>
+            </div>
+            <h3 class="accept-title">We accept</h3>
+            <div class="payment-methods">
+                <img src="images/pay.png" alt="Pay">
+            </div>
+        </div>
+        
+    </div>
+    <div class="container-info">
+    <p class="coperait">© 2021 GreenShop. All Rights Reserved.</p>
+</div>
+    </div>
+</footer>
 </body>
 </html>

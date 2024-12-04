@@ -370,15 +370,15 @@ color: #666;
     display: inline-block;
     width: 350px;
     vertical-align: top;
-    height: 1170px;
+    height: 1180px;
     background-color: #f9f9f9;
+    margin-top: 26px;
 }
 
 /* Банер */
 .sale-banner {
-    display: block;
-    width: 415px;
-    margin-left: -32px;
+    display: inline-block;
+    width: 350px;
     margin-top: 270px;
     position: relative;
     z-index: 1;
@@ -436,7 +436,7 @@ color: #666;
 
 /* Вирівнювання секції з фільтрами та сортуванням */
 .filter-sort-box {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
 }
 
 
@@ -450,13 +450,13 @@ color: #666;
 }
 
 .product-card {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     width: calc(33.333% - 20px);
     padding: 10px;
-    box-sizing: border-box;
-    position: relative;
 }
 
 .sale-badge {
@@ -478,6 +478,15 @@ color: #666;
     font-size: 18px;
     color: #4CAF50;
     font-size: bold;
+    transition: color 0.3s ease;
+}
+
+.old-price {
+    color: gray;
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
 }
 
 .product-card:hover {
@@ -485,9 +494,18 @@ color: #666;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.product-card:hover .price {
+    color: darkgreen;
+}
+
+.product-card:hover .old-price {
+    color: lightgray;
+}
+
 /* Панель фільтру і сортування */
 .filter-sort-box {
     display: flex;
+    margin-bottom: 26px;
     justify-content: space-between;
     padding: 10px 20px;
     border-bottom: 1px solid #ccc;
@@ -610,6 +628,17 @@ color: #666;
     justify-content: center;
     gap: 27px;
     align-items: center;
+}
+
+.product-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 16px;
+    margin: 0;
 }
 
 .blog-grid {
@@ -842,12 +871,11 @@ color: #666;
 }
 
 .footer-section-title {
-    ont-family: var(--font-family);
+    font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
-    margin-bottom: 8px;
 }
 
 .coperait {

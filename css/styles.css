@@ -1098,3 +1098,49 @@ color: #666;
     left: 4px;
   }
   
+
+@media (max-width: 1200px) {
+    /* Зміна розмірів тексту, блоків, padding */
+    .hero-text-box {
+      font-size: 1.8rem;
+    }
+    .hero-image-box img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      padding: 0 20px;
+    }
+    .nav-menu {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-text-box {
+      text-align: center;
+    }
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .hero-text-box {
+      font-size: 1.5rem;
+    }
+    .product-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .hero-text-box {
+      font-size: 1.2rem;
+    }
+    .nav-menu li {
+      font-size: 14px;
+    }
+  }

@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
     <div class="wrapper">
     <!-- Header and Navigation -->
     <header>
@@ -39,7 +42,7 @@
                           </ul>
                     </li> 
                     <li><a href="#">Blogs</a></li>
-                    <li><a href="registration.html"></a></li>
+                    <li><a href="registration.html" class="link-with-preloader"></a></li>
                 </ul>
                 <div class="login-btn">
                     <a href="registration.html">
@@ -350,6 +353,13 @@
     <p class="coperait">© 2021 GreenShop. All Rights Reserved.</p>
 </div>
     </div>
-</footer>
-</body>
-</html>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          setTimeout(() => {
+            document.body.classList.add("loaded");
+          }, 1000);
+        });
+      </script>
+      </body>
+      </html>

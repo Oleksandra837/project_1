@@ -160,13 +160,20 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #00a358;
+    background-color: #00a64f;
     color: #fff;
     border: none;
     padding: 5px 20px;
     border-radius: 16px;
     cursor: pointer;
     font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-btn button:hover {
+    background-color: #00873c;
+    transform: scale(1.05);
+
 }
 
 /* Hero Section styling */
@@ -178,6 +185,7 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background: linear-gradient(to right, #f9f9f9, #afe5c6);
 }
 
 /* Styling for text in the hero section */
@@ -213,6 +221,13 @@ p {
     font-size: 18px;
     margin-top: 20px;
     display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #00873c;
+    transform: scale(1.05);
+
 }
 
 /* Styling for the image in the hero section */
@@ -985,3 +1000,101 @@ color: #666;
     margin: 0 5px;
     vertical-align: middle;
 }
+
+  
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  body.loaded .preloader {
+    display: none;
+  }
+
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #4CAF50;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
+  
+.page-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: none; /* Прелоадер прихований за замовчуванням */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+
+  .custom-checkbox input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Стилізація кастомного чекбокса */
+  .custom-checkbox label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Кастомний квадрат */
+  .custom-checkbox label span {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all 0.3s;
+    position: relative;
+    margin-right: 8px;
+  }
+  
+  /* Галочка */
+  .custom-checkbox input[type="checkbox"]:checked + label span {
+    background-color: #4CAF50;
+  }
+  
+  .custom-checkbox input[type="checkbox"]:checked + label span::after {
+    content: '✔';
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+  }
+  
